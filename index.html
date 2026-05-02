@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#171916">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Pawform Lab | 3D 列印寵物訂製用品</title>
+    <meta
+      name="description"
+      content="Pawform Lab 製作 3D 列印寵物用品，提供姓名、尺寸、顏色與生活情境的 DIY 客製訂製。"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="主選單">
+      <a class="brand" href="#top" aria-label="HEJ MOLD 首頁">
+        <img class="brand-logo" src="assets/hej-mold-logo.jpg" alt="HEJ MOLD">
+      </a>
+      <nav class="nav-links" aria-label="頁面區塊">
+        <a href="#products">產品</a>
+        <a href="#about">關於</a>
+        <a href="#custom">訂製</a>
+        <a href="#contact">聯繫</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="開啟選單" aria-controls="site-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <div class="menu-modal" id="site-menu" aria-hidden="true">
+      <button class="menu-backdrop" type="button" aria-label="關閉選單"></button>
+      <div class="menu-panel" role="dialog" aria-modal="true" aria-label="網站選單">
+        <button class="menu-close" type="button" aria-label="關閉選單">×</button>
+        <a href="#about">關於我們</a>
+        <a href="#contact">聯繫我們</a>
+        <div class="menu-qr">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fwww.instagram.com%2Fhejmold%3Figsh%3DMWtweHJ1cDFxdWg3OQ%3D%3D"
+            alt="HEJ MOLD Instagram QR Code"
+          >
+          <p>Instagram</p>
+        </div>
+      </div>
+    </div>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-categories" aria-label="產品類別卡片選單">
+          <div class="category-carousel" aria-label="可滑動產品類別">
+            <a class="category-card card-clay" href="tag-diy.html">
+              <span>01</span>
+              <strong>吊牌 DIY</strong>
+              <small>進入訂製頁面</small>
+            </a>
+            <a class="category-card card-mint" href="#hanger">
+              <span>02</span>
+              <strong>寵物衣架</strong>
+              <small>小型犬專用</small>
+            </a>
+            <a class="category-card card-blue" href="#smart-tag">
+              <span>03</span>
+              <strong>電子吊牌</strong>
+              <small></small>
+            </a>
+            <a class="category-card card-cream" href="#statue">
+              <span>04</span>
+              <strong>寵物雕像製作</strong>
+              <small></small>
+            </a>
+            <a class="category-card card-charcoal" href="#doll-bag">
+              <span>05</span>
+              <strong>娃包</strong>
+              <small></small>
+            </a>
+            <a class="category-card card-mint" href="#about">
+              <span>06</span>
+              <strong>關於我們</strong>
+              <small>小量訂製工作室</small>
+            </a>
+            <a class="category-card card-clay" href="#contact">
+              <span>07</span>
+              <strong>聯繫我們</strong>
+              <small>填表確認報價</small>
+            </a>
+          </div>
+          <div class="drag-hint">
+            <span></span>
+            <p>Swipe to choose</p>
+          </div>
+        </div>
+        <div class="hero-summary">
+          <p>3D Printed Pet Goods</p>
+          <strong>為毛孩生活量身製作的 3D 列印訂製用品</strong>
+        </div>
+      </section>
+
+      <section class="section product-overview" id="products">
+        <div class="section-heading">
+          <p class="eyebrow">Products</p>
+          <h2>第一批主打產品</h2>
+          <p>先用少量品項測試市場，讓客人容易理解、容易下單，也方便你控管製作時間。</p>
+        </div>
+
+        <div class="product-grid five-products">
+          <a class="product-card" id="tag-diy" href="tag-diy.html">
+            <div class="product-visual visual-tag" role="img" aria-label="寵物姓名吊牌示意"></div>
+            <div class="product-info">
+              <p class="product-type">Tag DIY</p>
+              <h3>吊牌 DIY</h3>
+              <p>專屬名牌，承載安心，也承載彼此的陪伴。可依需求選擇顏色、背面樣式與聯絡資訊。</p>
+              <span class="price">填表後報價</span>
+            </div>
+          </a>
+
+          <article class="product-card" id="hanger">
+            <div class="product-visual visual-hanger" role="img" aria-label="寵物衣架示意"></div>
+            <div class="product-info">
+              <p class="product-type">Hanger</p>
+              <h3>寵物衣架</h3>
+              <p>為小型寵物衣服、牽繩、領巾設計，可依衣物尺寸調整寬度。</p>
+              <span class="price">NT$ 120 起</span>
+            </div>
+          </article>
+
+          <article class="product-card" id="smart-tag">
+            <div class="product-visual visual-smart" role="img" aria-label="電子吊牌示意"></div>
+            <div class="product-info">
+              <p class="product-type">Smart Tag</p>
+              <h3>電子吊牌</h3>
+              <p>可規劃 QR Code 或 NFC 資訊入口，適合放聯絡方式、社群頁或寵物資料頁。</p>
+              <span class="price">NT$ 280 起</span>
+            </div>
+          </article>
+
+          <article class="product-card" id="statue">
+            <div class="product-visual visual-statue" role="img" aria-label="寵物雕像示意"></div>
+            <div class="product-info">
+              <p class="product-type">Pet Statue</p>
+              <h3>寵物雕像製作</h3>
+              <p>依照片與造型需求製作紀念小雕像，適合桌面擺件、生日禮物與收藏。</p>
+              <span class="price">依需求報價</span>
+            </div>
+          </article>
+
+          <article class="product-card" id="doll-bag">
+            <div class="product-visual visual-bag" role="img" aria-label="娃包示意"></div>
+            <div class="product-info">
+              <p class="product-type">Doll Bag</p>
+              <h3>娃包</h3>
+              <p>為玩偶、吊飾或小型寵物周邊設計的展示包配件，可搭配名字與色彩客製。</p>
+              <span class="price">NT$ 320 起</span>
+            </div>
+          </article>
+        </div>
+
+      </section>
+
+      <section class="section split" id="about">
+        <div>
+          <p class="eyebrow">About Us</p>
+          <h2>關於我們</h2>
+          <p>
+            我們用 3D 列印把寵物的名字、個性與生活習慣做成小量訂製產品。每件作品都會依需求確認尺寸、文字與用途，再進入列印製作。
+          </p>
+        </div>
+        <div class="about-panel">
+          <strong>適合想做少量、獨特、不想撞款的寵物周邊。</strong>
+          <p>目前以 DIY 訂製與小量製作為主，網站先提供分類介紹，正式訂製細節會透過 Google 表單與訊息確認。</p>
+        </div>
+      </section>
+
+      <section class="custom section-band" id="custom">
+        <div class="section-heading">
+          <p class="eyebrow">Custom Order</p>
+          <h2>DIY 訂製流程</h2>
+          <p>Google 表單只用來收集需求，訂單會在你確認報價與付款後才正式成立。</p>
+        </div>
+
+        <div class="steps">
+          <article>
+            <span>01</span>
+            <h3>填寫需求</h3>
+            <p>選擇產品、顏色、尺寸、姓名文字，也可以上傳參考圖片。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>確認報價</h3>
+            <p>依複雜度、材料與尺寸確認是否可製作，回覆正式價格。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>付款製作</h3>
+            <p>付款完成後開始建模、列印與整理，完成後提供出貨通知。</p>
+          </article>
+        </div>
+
+        <a class="wide-cta" href="https://docs.google.com/forms/d/e/1FAIpQLScx-44lM4GZ6sVmiGCI82Ga-LqEifvNZSYOcZWOJEOEW6aUzw/viewform" target="_blank" rel="noreferrer">
+          前往 Google 訂製表單
+        </a>
+      </section>
+
+      <section class="section split" id="material">
+        <div>
+          <p class="eyebrow">Material & Care</p>
+          <h2>材質、使用與安全說明</h2>
+          <p>
+            3D 列印適合做輕量、客製與小量生產的物件。每件商品會因列印方向與材料批次產生細微紋理，這是製程特性。
+          </p>
+        </div>
+        <div class="notice-list">
+          <div>
+            <strong>常用材料</strong>
+            <p>PLA / PETG，依產品用途選擇。實際材料請以單件報價時說明為準。</p>
+          </div>
+          <div>
+            <strong>清潔方式</strong>
+            <p>建議使用濕布擦拭，不建議高溫烘乾、洗碗機或長時間曝曬。</p>
+          </div>
+          <div>
+            <strong>使用提醒</strong>
+            <p>商品不是啃咬玩具，若寵物有啃咬或吞食習慣，請在監督下使用。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>常見問題</h2>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>填表後就是下單了嗎？</summary>
+            <p>不是。填表只代表提出需求，訂單需經確認報價、雙方確認內容與付款完成後才成立。</p>
+          </details>
+          <details>
+            <summary>可以修改設計幾次？</summary>
+            <p>基礎文字與尺寸可在製作前討論調整。付款並開始列印後，若要大幅修改會重新報價。</p>
+          </details>
+          <details>
+            <summary>客製商品可以退貨嗎？</summary>
+            <p>客製化商品依個人需求製作，非重大瑕疵不接受任意退貨。若運送或製作有問題，請收到後盡快聯繫。</p>
+          </details>
+          <details>
+            <summary>出貨方式有哪些？</summary>
+            <p>可依你的服務能力改成超商店到店、郵寄或宅配。正式上線前請把運費規則補上。</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="contact section-band" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>聯繫我們</h2>
+          <p>想確認能不能製作、價格或尺寸，先填表單最清楚。也可以把這裡改成你的 LINE、Instagram 或 Email。</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="https://docs.google.com/forms/d/e/1FAIpQLScx-44lM4GZ6sVmiGCI82Ga-LqEifvNZSYOcZWOJEOEW6aUzw/viewform" target="_blank" rel="noreferrer">
+            填寫 Google 訂製表單
+          </a>
+          <a class="button secondary" href="mailto:hello@example.com">Email 聯繫</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Pawform Lab</strong>
+        <p>3D 列印寵物訂製用品工作室</p>
+      </div>
+      <a href="mailto:hello@example.com">hello@example.com</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#171916">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>吊牌 DIY | Pawform Lab</title>
+    <meta
+      name="description"
+      content="Pawform Lab 吊牌 DIY 訂製頁面，提供尺寸、材質、顏色與背面樣式說明。"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="主選單">
+      <a class="brand" href="index.html" aria-label="回到 HEJ MOLD 首頁">
+        <img class="brand-logo" src="assets/hej-mold-logo.jpg" alt="HEJ MOLD">
+      </a>
+      <nav class="nav-links" aria-label="頁面區塊">
+        <a href="index.html">首頁</a>
+        <a href="index.html#products">產品</a>
+        <a href="index.html#contact">聯繫</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="開啟選單" aria-controls="site-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <div class="menu-modal" id="site-menu" aria-hidden="true">
+      <button class="menu-backdrop" type="button" aria-label="關閉選單"></button>
+      <div class="menu-panel" role="dialog" aria-modal="true" aria-label="網站選單">
+        <button class="menu-close" type="button" aria-label="關閉選單">×</button>
+        <a href="index.html#about">關於我們</a>
+        <a href="index.html#contact">聯繫我們</a>
+        <div class="menu-qr">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fwww.instagram.com%2Fhejmold%3Figsh%3DMWtweHJ1cDFxdWg3OQ%3D%3D"
+            alt="HEJ MOLD Instagram QR Code"
+          >
+          <p>Instagram</p>
+        </div>
+      </div>
+    </div>
+
+    <main class="product-page">
+      <div class="tag-detail" aria-label="吊牌 DIY 詳細說明">
+        <section class="tag-story">
+          <p class="eyebrow">Pet Custom Tag</p>
+          <h1>寵物客製吊牌</h1>
+          <p>簡約專屬名牌，一份安心的守護。</p>
+        </section>
+
+        <section class="tag-story with-pet">
+          <div>
+            <h2>設計理念</h2>
+            <p>當毛孩奔跑、探索世界，始終知道回家的方向。</p>
+            <p>一枚低調的標記，承載安心，也承載彼此的陪伴。</p>
+          </div>
+          <div class="pet-portrait" aria-hidden="true"></div>
+        </section>
+
+        <section class="tag-specs">
+          <h2>產品資訊</h2>
+          <div class="spec-row">
+            <div>
+              <span>直徑</span>
+              <strong>4.5 cm</strong>
+            </div>
+            <div>
+              <span>材料</span>
+              <strong>PLA</strong>
+            </div>
+          </div>
+          <div class="tag-size-visual" aria-label="吊牌尺寸示意">
+            <span class="size-y">4.5 cm</span>
+            <span class="size-x">4.5 cm</span>
+            <div class="round-tag-demo">
+              <span>RUMI</span>
+            </div>
+          </div>
+          <p class="tag-note">簡潔設計 x 低飽和色調，自然融入日常風格。</p>
+        </section>
+
+        <section class="tag-options">
+          <h2>STEP. 2 選擇顏色</h2>
+          <div class="color-grid">
+            <div><span class="swatch fog"></span><p>霧霾灰｜黑字</p></div>
+            <div><span class="swatch navy"></span><p>爵士藍｜白字</p></div>
+            <div><span class="swatch olive"></span><p>橄欖綠｜白字</p></div>
+            <div><span class="swatch black"></span><p>曜石黑｜白字</p></div>
+          </div>
+        </section>
+
+        <section class="tag-options">
+          <h2>STEP. 3 選擇背面樣式</h2>
+          <div class="back-grid">
+            <div><span>09XX-XXX-XXX</span><p>電話</p></div>
+            <div><span>QR</span><p>電話 + QR Code</p></div>
+            <div><span>QR</span><p>QR Code</p></div>
+            <div><span></span><p>空白</p></div>
+          </div>
+          <p class="tag-note">走失時，可透過電話或 QR Code 聯繫主人。背面樣式可自由選擇，也可選擇極簡空白。</p>
+        </section>
+
+        <section class="tag-notice">
+          <h2>注意事項</h2>
+          <ul>
+            <li>本產品僅為裝飾及身份辨識用途，非專業防護裝備。</li>
+            <li>3D 列印表面可能有細小紋路，屬於正常製程特色。</li>
+            <li>客製產品確認製作後不適用任意退換貨。</li>
+          </ul>
+          <a class="button primary" href="https://docs.google.com/forms/d/e/1FAIpQLScx-44lM4GZ6sVmiGCI82Ga-LqEifvNZSYOcZWOJEOEW6aUzw/viewform" target="_blank" rel="noreferrer">
+            進入訂製
+          </a>
+        </section>
+      </div>
+    </main>
+
+    <a class="floating-order" href="https://docs.google.com/forms/d/e/1FAIpQLScx-44lM4GZ6sVmiGCI82Ga-LqEifvNZSYOcZWOJEOEW6aUzw/viewform" target="_blank" rel="noreferrer">
+      進入訂製
+    </a>
+    <script src="script.js"></script>
+  </body>
+</html>
