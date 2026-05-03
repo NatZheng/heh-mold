@@ -1,49 +1,35 @@
-# Pawform Lab Website
+# HEJ MOLD Website
 
-這是一個可部署到 GitHub Pages 的免費靜態網站範本，適合 3D 列印寵物用品工作室使用。首頁目前採用旋轉類別選單，包含五個產品類別、關於我們與聯繫我們。
+HEJ MOLD 是一個手機優先的靜態網站，用 GitHub Pages 免費部署。網站用來介紹與承接寵物訂製用品。
 
-## 你需要先替換的內容
+請先閱讀 [PROJECT_NOTES.md](PROJECT_NOTES.md)，裡面記錄目前設計方向、開發流程、部署方式、使用者偏好，以及換電腦後給 Codex 的交接資訊。
 
-1. `index.html` 裡的品牌名稱 `Pawform Lab`
-2. `https://forms.gle/REPLACE_WITH_YOUR_FORM`
-3. 頁尾的 `hello@example.com`
-4. 產品名稱、價格、製作時間、材質說明
-5. 未來如果有實拍照片，可以把 `.product-visual` 區塊改成 `<img>` 圖片
+## 主要檔案
 
-## 目前首頁七個入口
+- `index.html`: 首頁
+- `tag-diy.html`: 吊牌 DIY 產品頁
+- `styles.css`: 全站樣式
+- `script.js`: 選單互動
+- `assets/`: LOGO 與後續產品圖片
 
-- 吊牌 DIY
-- 寵物衣架
-- 電子吊牌
-- 寵物雕像製作
-- 娃包
-- 關於我們
-- 聯繫我們
+## 本機預覽
 
-## GitHub Pages 發布方式
+直接用瀏覽器開啟：
 
-1. 在 GitHub 建立一個新的 repository
-2. 把這個資料夾內的 `index.html`、`styles.css`、`README.md` 上傳
-3. 到 repository 的 `Settings`
-4. 進入 `Pages`
-5. `Build and deployment` 選 `Deploy from a branch`
-6. Branch 選 `main`，資料夾選 `/root`
-7. 儲存後等待 GitHub 產生網址
+```text
+index.html
+```
 
-## 建議 Google 表單欄位
+## GitHub Pages
 
-- 姓名
-- Email
-- LINE ID 或 Instagram 帳號
-- 寵物種類
-- 寵物名字
-- 想訂製的產品
-- 顏色
-- 尺寸需求
-- 是否加名字或圖案
-- 上傳參考圖片
-- 預算範圍
-- 希望收到日期
-- 收件方式
-- 備註
-- 勾選同意客製化商品確認製作後不接受任意取消
+部署設定：
+
+- Source: Deploy from a branch
+- Branch: `main`
+- Folder: `/(root)`
+
+預期網址：
+
+```text
+https://natzheng.github.io/heh-mold/
+```
