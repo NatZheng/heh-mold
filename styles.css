@@ -382,12 +382,17 @@ h3 {
 }
 
 .category-card strong {
-  max-width: 180px;
-  font-size: 2.05rem;
+  width: 100%;
+  max-width: none;
+  overflow: hidden;
+  font-size: clamp(1.58rem, 7vw, 2.05rem);
   line-height: 1.05;
+  white-space: nowrap;
+  text-overflow: clip;
 }
 
 .category-card small {
+  min-height: 1.35em;
   color: rgba(255, 255, 255, 0.78);
   font-size: 0.9rem;
 }
@@ -815,6 +820,11 @@ h3 {
 .tag-story h2 {
   color: #5d615f;
   text-shadow: 0 2px 0 rgba(255, 255, 255, 0.9), 0 7px 18px rgba(31, 37, 35, 0.18);
+}
+
+.tag-story h1 {
+  font-size: clamp(2.55rem, 12vw, 6.8rem);
+  line-height: 1.05;
 }
 
 .tag-story > p:last-child {
@@ -1248,7 +1258,7 @@ h3 {
   }
 
   .category-card strong {
-    font-size: 1.68rem;
+    font-size: clamp(1.34rem, 6vw, 1.68rem);
   }
 
   .tag-story {
