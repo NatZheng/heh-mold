@@ -244,10 +244,11 @@ body.menu-open {
 
 .hero {
   display: grid;
-  align-content: center;
+  align-content: start;
   justify-items: center;
+  gap: clamp(26px, 5svh, 58px);
   min-height: 100svh;
-  padding: calc(96px + env(safe-area-inset-top)) clamp(16px, 5vw, 64px) clamp(40px, 6vw, 72px);
+  padding: calc(116px + env(safe-area-inset-top)) clamp(16px, 5vw, 64px) clamp(40px, 6vw, 72px);
   background: #171916;
 }
 
@@ -433,7 +434,7 @@ h3 {
 .hero-summary {
   display: grid;
   gap: 8px;
-  width: min(430px, 100%);
+  width: min(720px, 100%);
   padding: 4px 4px 0;
   color: white;
 }
