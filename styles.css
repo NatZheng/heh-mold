@@ -2,7 +2,7 @@
   --ink: #1f2523;
   --muted: #66706d;
   --line: #dce2de;
-  --paper: #f7f5ef;
+  --paper: #ffffff;
   --panel: #ffffff;
   --clay: #c56f4d;
   --mint: #8fb7a3;
@@ -165,7 +165,7 @@ a {
   min-height: 100%;
   gap: 12px;
   padding: 72px 22px 28px;
-  background: #fffaf0;
+  background: white;
   box-shadow: -18px 0 42px rgba(0, 0, 0, 0.2);
   transform: translateX(100%);
   transition: transform 220ms ease;
@@ -317,7 +317,7 @@ h3 {
 }
 
 .button.secondary {
-  background: rgba(255, 255, 255, 0.72);
+  background: white;
   border: 1px solid rgba(31, 37, 35, 0.14);
 }
 
@@ -365,10 +365,10 @@ h3 {
   padding: 22px;
   color: white;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(31, 37, 35, 0.08);
   border-radius: 18px;
   scroll-snap-align: center;
-  box-shadow: 0 30px 44px rgba(0, 0, 0, 0.28);
+  box-shadow: none;
   transition: transform 180ms ease, opacity 180ms ease;
 }
 
@@ -802,9 +802,7 @@ h3 {
 .tag-detail section {
   overflow: hidden;
   padding: clamp(28px, 6vw, 54px);
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.72)),
-    var(--panel);
+  background: white;
   border: 1px solid rgba(31, 37, 35, 0.08);
   border-radius: 8px;
 }
@@ -1172,9 +1170,7 @@ h3 {
 }
 
 .contact {
-  background:
-    linear-gradient(135deg, rgba(197, 111, 77, 0.1), transparent 42%),
-    white;
+  background: white;
 }
 
 .contact-actions {
